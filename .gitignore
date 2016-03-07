@@ -54,3 +54,15 @@ Temporary Items
 
 #Object files
 *.o
+
+#Visual Studio
+*.tlog
+*.log
+*.sdf
+*.suo
+*.ilk
+*.idb
+*.pdb
+*.obj
+*.filters
+*.user

@@ -47,10 +47,10 @@ Temporary Items
 .apdisk
 
 #Executables
-.exe
+*.exe
 
 #Haskell "Intermediate" Language
-.hi
+*.hi
 
 #Object files
-.o
+*.o

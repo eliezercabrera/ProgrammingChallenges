@@ -1,0 +1,6 @@
+Al + Zn -> Zn
+H -> O + H2O
+C5H12 -> O2 + CO2 + H2O
+CO2 + H2O -> C6[H12O6)2 + O2
+A + BC + X + Y3 -> X2Y + AB + C
+H2O + O3 + CHO3 -> O2 + H2 + CO

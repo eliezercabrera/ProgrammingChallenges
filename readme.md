@@ -1,4 +1,4 @@
-###Programming Challenges
+#Programming Challenges
 
 This repository compiles an assorted collection of programming challenges. I completed these challenges on my free time, so I have not solved every challenge from the sources, and I also have incomplete records since I am compiling them after having solved many challenges. For example, I have completed every Euler challenge up to the 59th one.
 
@@ -8,18 +8,14 @@ I used mostly Haskell and C++ to solve the problems. Using *Haskell* has given m
 
 The challenges are divided into directories:
 
-#####Daily Programmer
-
+#####Daily Programmer  
 Contrary to its name, challenges are released three times a week. Each week has an easy, medium, and hard challenge.
 
-#####Project Euler
-
+#####Project Euler  
 These challenges are more heavy on the math, especially in number theory. They become more challenging as they go on.
 
-#####Nerdy Programmer
-
+#####Nerdy Programmer  
 Small collection of assorted challenges. The challenges are fantasy or sci-fi themed, which resembles the style of some programming competitions.
 
-#####Linear Ordering, and Forward Chaining
-
+#####Linear Ordering, and Forward Chaining  
 Two C++ programs I wrote during my artificial intelligence class.

@@ -4,7 +4,7 @@ This repository houses an assorted collection of programming challenges that I c
 
 I do not systematically solve every challenge from every source, so this is an incomplete collection. Furthermore, I have solved challenges that I have not archived to this repository (e.g. all Project Euler's problems through the 59th).
 
-I have standardized how I organize the code, data files, and problem descriptions recently (late 2019).
+I have standardized how I organize the code, data files, and problem descriptions recently (late 2018).
 
 This repository mostly serves an archival purpose, so I do not tend to the accesibility of this code.
 

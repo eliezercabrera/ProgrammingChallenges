@@ -1,7 +1,0 @@
-0 to 2,
-2 *BLAST* to 3,
-Reached Last Chance, encountering 4 zombies in Reading the input: 0s
-Building the graph: 0.0020286s
-Floyd-Warshal: 0.0030049s
-Printing Results: 0.0030035s
-Total Time: 0.008037s

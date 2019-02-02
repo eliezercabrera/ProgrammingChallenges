@@ -1,0 +1,41 @@
+module Main where
+
+import Control.Arrow
+import Data.List (find, nub)
+import Data.Maybe (fromJust, mapMaybe)
+
+import qualified Data.IntMap.Strict as Map
+
+limit = 60 :: Int
+
+start = 0 :: Int
+
+orderedKeys = [2, 10, 14] :: [Int]
+
+step :: Int -> [Int]
+step n = mapMaybe ($ n) (fmap (pure .) pureOperations ++ impureOperations)
+  where
+    pureOperations = [(+ 5), (+ 7)]
+    impureOperations = [integralSquareRoot]
+    integralSquareRoot :: Int -> Maybe Int
+    integralSquareRoot =
+      flip
+        Map.lookup
+        (Map.fromList
+           (takeWhile ((<= limit) . fst) (fmap ((^ 2) &&& id) [0 ..])))
+
+inSequence :: Eq a => [a] -> [a] -> Bool
+inSequence keySequence candidate =
+  keySequence == filter (`elem` keySequence) candidate
+
+findSequences :: [Int]
+findSequences = (fromJust . find (inSequence orderedKeys) . go start) []
+  where
+    go :: Int -> [Int] -> [[Int]]
+    go seed currentCandidate
+      | seed > limit = [reverse currentCandidate]
+      | elem seed currentCandidate = [reverse currentCandidate]
+      | otherwise = concatMap (flip go (seed : currentCandidate)) (step seed)
+
+main :: IO ()
+main = print findSequencess

@@ -1,0 +1,1 @@
+Criterion is a benchmarking framework.
